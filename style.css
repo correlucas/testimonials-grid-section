@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -39,18 +41,69 @@ button {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  max-width: 100vw;
   line-height: 1.3;
   text-rendering: optimizeSpeed;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 /* colors  */
 :root {
   /* primary */
-  --dark-blue: hsla(234, 53%, 16%, 1);
+  --purple: hsla(263, 55%, 52%, 1);
+  --dark-gray: hsla(217, 19%, 35%, 1);
+  --black: hsla(219, 28%, 14%, 1);
 
   /* neutral */
-  --gray: hsla(233, 10%, 56%, 1);
+  --white: hsla(0, 0%, 100%, 0.98);
+  --light-gray: hsla(210, 46%, 95%, 1);
+  --warm-gray: hsla(0, 0%, 85%, 1);
+  --50-gray: hsla(217, 10%, 60%, 1);
+}
 
+/* typography */
+
+.heading {
+  font: 600 20px/24px 'Barlow Semi Condensed', sans-serif;
+}
+
+.body {
+  font: 500 13px/18px 'Barlow Semi Condensed', sans-serif;
+  opacity: 0.7;
+}
+
+.profile-name {
+  font: 500 13px/13px 'Barlow Semi Condensed', sans-serif;
+}
+
+.profile-title {
+  font: 500 11px/11px 'Barlow Semi Condensed', sans-serif;
+  opacity: 0.5;
+}
+
+/* card colors */
+
+.card-white {
+  background-color: var(--white);
+}
+
+.card-purple {
+  background-color: var(--purple);
+}
+
+.card-gray {
+  background-color: var(--dark-gray);
+}
+
+.card-black {
+  background-color: var(--black);
+}
+
+.card-white-1,
+.card-white-2 {
+  background-color: var(--white);
 }
