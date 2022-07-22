@@ -44,8 +44,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 100vh;
-  max-width: 100vw;
   line-height: 1.3;
   text-rendering: optimizeSpeed;
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -77,33 +75,74 @@ body {
 }
 
 .profile-name {
-  font: 500 13px/13px 'Barlow Semi Condensed', sans-serif;
+  font: 500 13px/1 'Barlow Semi Condensed', sans-serif;
 }
 
 .profile-title {
-  font: 500 11px/11px 'Barlow Semi Condensed', sans-serif;
+  font: 500 11px/1 'Barlow Semi Condensed', sans-serif;
   opacity: 0.5;
 }
 
 /* card colors */
 
-.card-white {
-  background-color: var(--white);
-}
-
 .card-purple {
+  color: var(--white);
   background-color: var(--purple);
 }
 
 .card-gray {
+  color: var(--white);
   background-color: var(--dark-gray);
 }
 
 .card-black {
+  color: var(--white);
   background-color: var(--black);
 }
 
 .card-white-1,
 .card-white-2 {
+  color: var(--black);
   background-color: var(--white);
+}
+
+/* card */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1110px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile img {
+  width: 28px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  /* border: 2px solid var(--white); */
+}
+
+.testimonials .heading {
+  padding-bottom: 16px;
 }
