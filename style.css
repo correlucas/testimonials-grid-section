@@ -41,12 +41,14 @@ button {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
   line-height: 1.3;
   text-rendering: optimizeSpeed;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  background: linear-gradient(111.34deg, #F6F9FB 0%, #CCDDEE 100%);
+  /* background-color: var(--light-gray); */
 }
 
 /* colors  */
@@ -87,33 +89,59 @@ body {
 
 .card-purple {
   color: var(--white);
-  background-color: var(--purple);
+  background: linear-gradient(180deg, #733FC8 0%, #9168D4 100%);
+  grid-column: span 2;
+  /* background-color: var(--purple); */
+  position: relative;
+  z-index: 1;
 }
+
+.quote {
+  content: url(./images/bg-pattern-quotation.svg);
+  position: absolute;
+  right: 80px;
+  top: 0;
+  z-index: -1;
+}
+
 
 .card-gray {
   color: var(--white);
-  background-color: var(--dark-gray);
+  background: linear-gradient(180deg, #48556A 0%, #667286 100%);
+  /* background-color: var(--dark-gray); */
 }
 
 .card-black {
   color: var(--white);
-  background-color: var(--black);
+  background: linear-gradient(180deg, #1A212E 0%, #41516D 100%);
+  grid-column: span 2;
+  /* background-color: var(--black); */
 }
 
 .card-white-1,
 .card-white-2 {
   color: var(--black);
-  background-color: var(--white);
+  background: linear-gradient(360deg, #f1f1f7 0%, #FFFFFF 100%);
+  /* background-color: var(--white); */
+}
+
+.card-white-1 {
+  grid-row: span 2;
 }
 
 /* card */
+
+.container {
+  margin-inline: 40px;
+}
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1110px;
   margin: 0 auto;
-  gap: 24px;
+  row-gap: 24px;
+  column-gap: 30px;
 }
 
 .card {
@@ -121,7 +149,6 @@ body {
   padding: 32px;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-
 
 .profile {
   display: flex;
@@ -134,15 +161,32 @@ body {
 .profile-info {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .profile img {
-  width: 28px;
+  max-width: 36px;
   aspect-ratio: 1;
   border-radius: 50%;
-  /* border: 2px solid var(--white); */
+}
+
+.border {
+  border: 2px solid hsla(264, 82%, 70%, 1);
 }
 
 .testimonials .heading {
   padding-bottom: 16px;
+}
+
+/* mobile breaking point */
+
+@media (max-width: 800px) {
+  .container {
+    margin-inline: 24px;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
