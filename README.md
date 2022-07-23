@@ -33,6 +33,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - Responsive Design
 - CSS Animations
 - Media queries
+- Mediakit-animations
 
 ### What I learned
 
@@ -41,11 +42,13 @@ Using a an effect that works like a general sibling that select also the previou
 
 ### Useful resources
 
-- [CSS Previous sibling selectors](https://medium.com/free-code-camp/how-to-make-the-impossible-possible-in-css-with-a-little-creativity-bd96bb42b29d) - Overflow W3 Schools
+- [CSS Previous sibling selectors](https://medium.com/free-code-camp/how-to-make-the-impossible-possible-in-css-with-a-little-creativity-bd96bb42b29d) - Previous sibling selectors
 - [Dealing With Hover on Mobile](https://www.youtube.com/watch?v=uuluAyw9AI0) - Dealing With Hover on Mobile
-
+- [W3 - Figure Tag](https://www.w3schools.com/tags/tag_figure.asp) - W3 - Figure Tag
+- [Figure Tag Explained](https://www.youtube.com/watch?v=JdagGAxAow0) - Figure Tag Explained
 
 
 ## Author
+
 - Github - [correlucas](https://github.com/correlucas/)
 - Frontend Mentor - [@correlucas](https://www.frontendmentor.io/profile/correlucas)
