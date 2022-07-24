@@ -142,23 +142,6 @@ body {
   margin: 40px;
   row-gap: 24px;
   column-gap: 30px;
-  -webkit-animation: slideIn 1s ease;
-  animation: slideIn 1s ease;
-}
-
-@-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    filter: blur(6px);
-    opacity: 0
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1 filter: blur(0px);
-  }
 }
 
 .card {
