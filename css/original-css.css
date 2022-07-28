@@ -173,6 +173,22 @@ a {
   border: 2px solid hsla(264, 82%, 70%, 1);
 }
 
+.border-yellow {
+  border: 3px solid #E4FF3E;
+}
+
+.border-purple {
+  border: 3px solid #9e61ff;
+}
+
+.border-cyan {
+  border: 3px solid hsla(158, 84%, 81%, 1);
+}
+
+.border-gray {
+  border: 3px solid rgb(179, 179, 179);
+}
+
 .testimonials .heading {
   padding-bottom: 16px;
 }
@@ -294,6 +310,7 @@ a {
   display: block;
   max-width: 36px;
   max-height: 36px;
+  border-radius: 50%;
 }
 
 .frontend-background {

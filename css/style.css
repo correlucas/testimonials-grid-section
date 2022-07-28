@@ -287,6 +287,7 @@ a {
   display: block;
   max-width: 36px;
   max-height: 36px;
+  border-radius: 50%;
 }
 
 .frontend-background {
