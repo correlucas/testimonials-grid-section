@@ -72,9 +72,11 @@ body {
 /* typography */
 .heading,
 span,
-a {
+a,
+h1 {
   font: 600 20px/24px 'Barlow Semi Condensed', sans-serif;
 }
+
 
 .body {
   font: 500 13px/18px 'Barlow Semi Condensed', sans-serif;
