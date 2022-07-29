@@ -220,11 +220,6 @@ h1 {
   .container {
     margin-inline: 24px;
   }
-
-  .card-grid {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* intro animation */
@@ -299,8 +294,43 @@ h1 {
   background-color: var(--black);
 }
 
+
 @media (max-width: 800px) {
+
+  .card-black {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .card-purple {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .card-green {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .card-white-1 {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+
+  .card-white-2 {
+    grid-column: span 2;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
   .original-challenge {
     display: flex;
     flex-direction: column;
   }
+}
