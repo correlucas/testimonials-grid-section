@@ -21,7 +21,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/testimonials-grid-sec-vanilla-css-card-hover-focus-easter-egg-Rd4fQD6hJU)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-vanilla-css-focus-effect-custom-design-e5bIzU3vZN)
 - Live Site URL: [Live Site at Vercel](https://testimonials-grid-section-nine-ivory.vercel.app/)
 ## My process
 
