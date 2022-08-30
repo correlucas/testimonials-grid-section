@@ -28,7 +28,6 @@ a:not([class]) {
     scroll-behavior: auto !important;
   }
 }
-Breaking it down
 
 img {
   max-width: 100%;
