@@ -16,9 +16,9 @@ a:not([class]) {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -240,7 +240,7 @@ h1 {
 
 /* intro animation */
 
-.profile,
+/* .profile,
 .profile img,
 .card,
 .quote {
@@ -260,7 +260,7 @@ h1 {
     transform: translateX(0px);
     opacity: 1;
   }
-}
+} */
 
 /* button between projects */
 
@@ -348,5 +348,162 @@ h1 {
   .original-challenge {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.card-green {
+  -webkit-animation: slideInLeft 1.2s ease-in 1 500ms;
+  animation: slideInLeft 1.2s ease-in 1;
+  transition: all ease-out 0.5s;
+}
+
+.card-purple {
+  -webkit-animation: slideInUp1.2s ease-in 1 500ms;
+  animation: slideInUp 1.2s ease-in 1;
+  transition: all ease-out 0.5s;
+}
+
+.card-white-1 {
+  -webkit-animation: slideInRight .2s ease-in 1 500ms;
+  animation: slideInRight 1.2s ease-in 1;
+  transition: all ease-out 0.5s;
+}
+
+.card-white-2 {
+  -webkit-animation: slideInLeft .2s ease-in 1 500ms;
+  animation: slideInLeft 1.2s ease-in 1;
+  transition: all ease-out 0.5s;
+}
+
+.card-black,
+.original-challenge {
+  -webkit-animation: slideInDown .2s ease-in 1 500ms;
+  animation: slideInDown 1.2s ease-in 1;
+  transition: all ease-out 0.5s;
+}
+
+
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
