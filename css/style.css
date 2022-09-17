@@ -375,10 +375,15 @@ h1 {
   transition: all ease-out 0.5s;
 }
 
-.card-black,
-.original-challenge {
+.card-black {
   -webkit-animation: slideInDown .2s ease-in 1 500ms;
   animation: slideInDown 1.2s ease-in 1;
+  transition: all ease-out 0.5s;
+}
+
+.original-challenge {
+  -webkit-animation: slideInDown2 .2s ease-in 1 500ms;
+  animation: slideInDown2 1.2s ease-in 1;
   transition: all ease-out 0.5s;
 }
 
@@ -475,6 +480,31 @@ h1 {
 @keyframes slideInDown {
   0% {
     transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes slideInDown2 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown2 {
+  0% {
+    transform: translateY(150px);
     opacity: 0;
   }
 
